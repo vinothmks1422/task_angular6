@@ -1,0 +1,18 @@
+
+<!-- Add and delete input text -->
+<div>
+  <input type="text" [(ngModel)]="name">
+  <button (click)="add()">Add</button>
+</div>
+<ul>
+  <li *ngFor="let item of array; let i = index">
+    <label>{{item}}</label>
+    <button (click)="delete(i)">Delete</button>
+  </li>
+</ul>
+
+
+<!-- two-way binding -->
+
+<input type="text" [(ngModel)]="text">
+<p>{{text}}</p>
