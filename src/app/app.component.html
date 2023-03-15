@@ -1,13 +1,12 @@
-
 <!-- Add and delete input text -->
 <div>
   <input type="text" [(ngModel)]="name">
-  <button (click)="add()">Add</button>
+  <button class="btn btn-success m-2" (click)="add()">Add</button>
 </div>
 <ul>
   <li *ngFor="let item of array; let i = index">
     <label>{{item}}</label>
-    <button (click)="delete(i)">Delete</button>
+    <button class="btn btn-primary m-2" (click)="delete(i)">Delete</button>
   </li>
 </ul>
 
